@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="startbootstrap-coming-soon-gh-pages/css/styles.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+ 
+  
+
+        <!-- Background Video-->
+        <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="videos/bg.mp4" type="video/mp4"></video>
+        <!-- Masthead-->
+        <div class="masthead">
+            <div class="masthead-content text-white">
+                <div class="container-fluid px-4 px-lg-0">
+                    <h3 class="fst-italic lh-1 mb-4">Enter your Informations to create an Account</h3>
+                    
+                    <div class="data">
+  <fieldset ><legend class="legend">Personal Informations</legend>
+  <form action="login.html" class="form"  enctype="multipart/form-data"   method="post">
+  <label>
+<img src="images/personicon.png" width="10%">
+<input class="first" name="first name"   type="text"  autocomplete="additional-name" placeholder=" 👉First name" required />
+</label>
+<label>
+<input name="last name" class="lastname"  type="text" placeholder="👉Last name"/>
+</label>
+<label>
+<img src="images/dateicon.png" width="10%"/>
+<input name="brith" class="brith"  type="date"   />
+
+</label>
+<label>
+<img src="images/telicon.png" width="10%" />
+<input name="phone" type="tel"  placeholder="📞your phone"/>
+</label>
+<label>
+<img src="images/emailicon.png" width="10%" />
+<input name="email" type="email" placeholder="👉your Email"/>
+</label>
+<label><img src="images/passicon.png" width="10%" />
+
+<input name="password" minlength="10" type="password" placeholder="🔐password" required/>
+</label>
+<lable class="countrylabl"><img src="images/countryicon.png" width="10%" />
+🌍Your Country:
+<select class="country" name="country">
+          <option>Choose your country</option>
+      <optgroup label="دول عربية">
+      <option>❤اليمن</option>
+      <option>العراق</option>
+      <option>عمان</option>
+      <option>لبنان</option>
+      <option>💚فلسطين</option>
+      <option>الاردن</option>
+      <option>سوريا</option>
+  </optgroup>
+      <optgroup label="دول أجنبية">
+<option>China</option>
+<option>Japan</option>
+<option>Rushia</option>
+
+      </optgroup>
+
+    </select>
+</lable><br>
+<label><img src="images/mssgicon.png" width="13%" />
+<textarea id="masage" placeholder="✉About you"></textarea><br>
+</label>
+<label><img src="images/gendericon.png" width="13%" />
+Gender:
+  <input name="gender" type="radio" />Male       
+  
+  <input name="gender" type="radio" />Fmale 
+   <br>
+</label>
+<input class="indexcancel" type="reset" name="cancle" value="إلغاء"/>
+<input class="indexsend"   type="submit" name="send" value="التالي"/>
+
+</fieldset>
+</form>
+</div>
+
+
+
+
+<style src="js/bootstrap.js"></style>
+</body>
+</html>

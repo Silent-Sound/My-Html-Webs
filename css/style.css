@@ -1,0 +1,439 @@
+/* ************الصفحة الرئيسية********************* */
+.border-bottom{
+  position:fixed;
+  top: 0px  !important;
+  width: 100%;
+  background-color: #100d0dbb;
+  z-index: 100;
+}
+.border-bottom ul li a{
+  color: rgb(238, 105, 4); 
+}
+.active{
+    background-color: gold !important;
+    color: rgb(224, 64, 10) !important;
+}
+
+.border-bottom ul li a:hover
+{
+color: yellow;
+transition:all 0.60s cubic-bezier(0.200, 0.03, 0.515, 0.955);
+transform:scale(1.2);
+}
+
+.border-bottom ul li a:focus
+{
+ color: greenyellow; 
+}
+
+
+.msgwelcome{
+  text-align: center;
+  box-shadow: #0e0e0e;
+font-size: xxx-large;
+font-family: "Monotype Koufi";
+color: rgb(254, 49, 3);
+padding: 50px;
+}
+
+.titledescweb{
+color: rgb(217, 78, 9);
+background-color: rgba(14, 16, 17, 0.579);
+width: fit-content;
+font-size: xx-large;
+font-family: "Monotype Koufi";
+border-radius: 0px 5px 0px 5px;
+border-style: double;
+border-width: 5px;
+padding: 8px;
+}
+.descweb{
+padding-right: 20px;
+  color: black;
+  font-weight: 600;
+  font-size: xx-large;
+  font-family: Helvetica, sans-serif;
+  font-style:oblique;
+  text-align: right;
+  margin-bottom: 100px;
+}
+
+.nav-item{
+  color: rgb(238, 105, 4);;
+}
+
+.design {
+    color: rgb(13, 13, 13);
+    text-align: center;
+    font-weight: 500;
+    font-family:Monotype Koufi ;
+    font-size: xx-large;
+    padding: 35px ; 
+    border-radius: 100px 100px 0 0;
+    width: 70%;
+    box-shadow: 0px 5px 30px 0px #f63803f3;
+    margin: 0 auto 0pt;
+    border-top: 7px  solid #dfc906;
+   
+    }
+
+.marq
+{
+  margin-top: 25px;
+color: rgb(250, 249, 247);
+font-weight: 600;
+font-size: x-large;
+font-family:Monotype Koufi ;
+
+}
+
+.logo
+{
+  margin-top: 70px;
+  text-align: center;
+}
+
+
+/* ************لصفحة إنشاء حساب********************* */
+.mb-4
+{
+  margin-top: 40px;
+}
+
+.form{
+  padding: 16px;
+  width: 280px;
+}
+
+
+.legend{
+font-size: x-large;
+font-family:  "Monotype Koufi";
+  color: black;
+  background-color: rgb(210, 162, 31);
+  border-radius: 7px 0px 7px 0px;
+  border-style:outset;
+  border-width: 3px;
+  border-color: white;
+  font-size: x-large;
+  text-align: left;
+}
+
+.form input ,.form textarea,.form select{
+  background-color: rgba(14, 11, 11, 0);
+  color: #e4bb15;
+  border: solid #c26807 2px;
+  height: 45px;
+  border-radius: 150px;
+  padding: 10px;
+}
+.form input::placeholder{
+  background-color: black;
+  color: #dfc906;
+}
+
+.lastname
+{
+  margin-left: 30px !important;
+}
+
+.brith
+{
+  width: 83%;
+}
+
+
+.countrylabl
+{
+  color: #e4bb15;
+}
+
+.country
+{
+margin-left: 30px;
+margin-bottom: 10px;
+color: #e78906 !important;
+background-color: rgba(255, 183, 0, 0) !important;
+  width: 80%;
+
+}
+
+.indexcancel
+{
+  
+background-color: rgba(255, 0, 0, 0.424) !important;
+}
+
+
+.indexcancel:hover
+{
+background-color: red !important;
+transition:all 0.60s cubic-bezier(0.200, 0.03, 0.515, 0.955);
+transform:scale(1.2);
+
+}
+
+.indexsend
+{
+  margin-top: 0px !important;
+background-color: rgba(0, 128, 0, 0.674) !important;
+margin: 15px;
+}
+
+
+
+.indexsend:hover
+{
+background-color: rgb(9, 209, 29) !important;
+transition:all 0.60s cubic-bezier(0.200, 0.03, 0.515, 0.955);
+transform:scale(1.2);
+}
+/* **********صفحة تسجيل الدخول********************* */
+ 
+.footerlog
+{
+  position: relative;
+  margin-top: 0;
+ padding-left: 50px;
+width:100%;
+height: 600px;
+}
+
+.msg
+ {
+ margin-top: 100px;
+ color: #121111;
+ font-family: Monotype Koufi;
+background-color: #77753c;
+ width: fit-content;
+ border-radius: 20% 20% 20% 20%;
+ border-style: dashed;
+ border-color:rgba(244, 175, 0, 0.753);
+ } 
+
+
+.footerlog form input
+{
+  color: white;
+
+  font-size: large;
+  padding: 5px;
+background-color: rgba(12, 12, 12, 0.515);
+  display: block;
+  width: 40%;
+  height: 100px;
+  border-radius: 40px;
+  border-color: #d40c0c rgb(255, 102, 0) rgb(255, 230, 0) brown;
+  border-width: 5px;
+  border-style:dashed;
+  margin-left: 30p;
+  margin-top: 30px;
+  box-shadow: 10px 1px 20px 10px rgba(233, 123, 4, 0.647);
+}
+
+.footerlog form input:hover
+{
+background-color: #e3d50734 ;
+}
+
+
+
+.footerlog form input::placeholder
+{
+  color: rgb(240, 235, 235);
+  font-size: x-large;
+  font-family:Monotype Koufi ;
+}
+
+.send
+{
+  position: absolute;
+  width: 10% !important;
+    background-color: #66d40c70 !important;
+
+}
+
+.send:hover
+{
+
+  font-size: x-large;
+  color: rgb(8, 239, 8);
+  background-color: rgb(32, 37, 31) !important;
+border-radius: 10px 0px 10px 0px ;
+transition-duration: 1.2s;
+}
+
+
+.send:active
+{
+  width: 30% !important;
+  transition-duration: 3s;
+}
+
+
+.cancel
+{
+  background-color: #d40c0c98 !important;
+  width: 10% !important;
+}
+
+
+.cancel:hover
+{
+  font-size: x-large;
+  color: rgb(240, 8, 8);
+  background-color: rgb(32, 37, 31) !important;
+border-radius: 10px 0px 10px 0px ;
+transition-duration: 1.2s;
+
+}
+
+.choice input
+{
+  margin: 10px;
+  display:inline-table !important;
+}
+
+
+.cancel:active
+{
+  width: 30% !important;
+  transition-duration: 3s;
+}
+
+
+
+.bg-circles span {
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 50px;
+  background: rgba(119, 223, 223, 0.298);
+  animation: float 1s linear infinite;
+  bottom: -150px;
+  border-radius: 50%;
+  border-style:hidden;
+  
+}
+
+.bg-circles span:nth-child(1) { left: 10%; animation-duration: 25s; border-radius: 15%; }
+.bg-circles span:nth-child(2) { left: 30%; width: 80px; height: 80px; animation-duration: 18s;border-radius: 70%; }
+.bg-circles span:nth-child(3) { left: 55%; animation-duration: 22s; }
+.bg-circles span:nth-child(4) { left: 75%; width: 100px; height: 100px; animation-duration: 30s; }
+
+@keyframes float {
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(-1200px) rotate(360deg); }
+}
+
+
+/* ************صفحة البيتزا********************* */
+
+.text-body-secondary{
+background-color: #17161669;
+width: fit-content;
+color: rgb(255, 255, 255);
+font-size: x-large;
+font-weight: 600;
+font-style: oblique;
+border-radius: 45px 10px 45px 10px ;
+border-style: solid;
+border-color: rgba(0, 0, 0, 0.472);
+box-shadow: 2px 5px 50px 20px #fcb902c0 ;
+
+}
+
+.hr{
+color: rgb(255, 102, 0);
+background-color: rgba(19, 20, 20, 0.723);
+width: fit-content;
+font-size: xx-large;
+font-weight: 600;
+font-family: "Monotype Koufi";
+border-radius: 0px 5px 0px 5px;
+border-style: double;
+border-width: 5px;
+padding: 8px;
+margin-right: 20px;
+margin-top: 100px;
+box-shadow: 2px 5px 50px 20px #fc8702aa ;
+}
+
+.list-group{
+  text-align: center;
+margin-bottom: 50px;
+margin-left: 10px;
+}
+
+
+.list-group-item{
+  background-color: rgba(22, 21, 21, 0.35);
+  color: rgb(245, 242, 242);
+  box-shadow:0px 0px 10px 5px #1616165d;
+  border: dashed 0.1px ;
+  border-color: #ff7300b6 goldenrod gold red;
+  font-weight:700;
+  font-size: large;
+
+}
+
+.fw-light{
+margin-top: 20px;
+color: #0e0e0e;
+font-weight: 900;
+font-style: oblique;
+font-family:  "Monotype Koufi";
+background-color: rgb(238, 183, 4);
+border-radius: 100px 10px 100px 10px ;
+width:auto;
+text-align: center;
+}
+
+
+
+
+/* ******************************************صفحة الالبومات******************************************** */
+.photo:hover  {
+  width:150px;
+  border-radius: 100px 100px 100px 100px;
+  box-shadow: 0 10px 20px goldenrod;
+transition:all 0.50s cubic-bezier(0.0, 0.0, 0.0, 0.0);
+transform:scale(2.0);
+
+}
+
+.sweet
+{
+  width: 100%;
+}
+
+.sweet:hover
+{
+width:150px;
+  border-radius: 100px 100px 100px 100px;
+  box-shadow: 0 10px 20px palevioletred;
+transition:all 0.50s cubic-bezier(0.0, 0.0, 0.0, 0.0);
+transform:scale(2.0);
+}
+
+.card-text{
+color: rgb(255, 111, 0);
+font-size: x-large;
+font-weight: 900;
+font-family: "Monotype Koufi";
+text-align: center;
+box-shadow: 1px 1px 10px 3px #d47d0c;
+background-color: #4747441c;
+border-radius: 0px 100px 35px 80px;
+}
+
+.card-body{
+border-radius: 5px 0px 5px 0px;
+background-color: rgb(45, 43, 42);
+}
+
+
+.col
+{
+  margin: 50px;
+}

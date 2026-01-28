@@ -1,0 +1,173 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>اتصل بنا</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+    }body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e77007, yellow);
+  overflow: hidden;
+}
+
+/* خلفية متحركة */
+.bg-circles span {
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.15);
+  animation: float 20s linear infinite;
+  bottom: -150px;
+  border-radius: 50%;
+}
+
+.bg-circles span:nth-child(1) { left: 10%; animation-duration: 25s; }
+.bg-circles span:nth-child(2) { left: 30%; width: 80px; height: 80px; animation-duration: 18s; }
+.bg-circles span:nth-child(3) { left: 55%; animation-duration: 22s; }
+.bg-circles span:nth-child(4) { left: 75%; width: 100px; height: 100px; animation-duration: 30s; }
+
+@keyframes float {
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(-1200px) rotate(360deg); }
+}
+
+/* صندوق تسجيل الدخول */
+.login-box {
+  position: relative;
+  width: 350px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.input-group label {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  color: #eee;
+  font-size: 14px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -8px;
+  font-size: 12px;
+  color: #ffd369;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #ffd369, #ffb347);
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.login-box button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.login-box .message {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.success { color: #7CFF7C; }
+.error { color: #FF7C7C; }
+
+  </style>
+</head>
+<body>  <!-- عناصر الخلفية -->  <div class="bg-circles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>  <!-- نموذج تسجيل الدخول -->  <div class="login-box">
+    <h2>اتصل بنا</h2>
+    <form id="loginForm">
+      <div class="input-group">
+        <input type="text" id="username" required>
+        <label>البريد الالكتروني</label>
+      </div>
+      <div class="input-group">
+        <input type="password" id="password" required>
+        <label>كلمة المرور</label>
+      </div>
+
+       <div class="input-group">
+        <input type="textarea" id="area" required>
+        <label>الرسالة</label>
+      </div>
+
+      <button type="submit">إرسال</button>
+    </form>
+    <div class="message" id="message"></div>
+  </div>  
+  <script>
+    const form = document.getElementById('loginForm');
+    const message = document.getElementById('message');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const user = document.getElementById('username').value;
+      const pass = document.getElementById('password').value;
+
+      // مثال تحقق بسيط
+      if (user === 'mohammed@gmail.com' && pass === '1234') {
+        message.textContent = 'تم إرسال الرسالة بنجاح ✔';
+        message.className = 'message success';
+      } else {
+        message.textContent = 'البريد الالكتروني أو كلمة المرور غير صحيحة ✖';
+        message.className = 'message error';
+      }
+    });
+  </script></body>
+</html>
